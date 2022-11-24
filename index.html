@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="container">
+            <h1 class="header">Generate a <span class="title"> Random Password </span> </h1>
+            <p class="supportingHeader">Never use an insecure password again.</p>
+
+            <div class="buttons">
+                <span id="password-slider"> Length: <label for="slider" id="sliderNumber"> 8 </label></span>
+                <input type="range" min="8" max="12" value="8" class="slider" id="slider" name="slider"></input>
+            </div>
+
+            <button id="generatePassword" type="button"> Generate Password </button>
+
+        </div>
+        <hr>
+        <div id="passBoxes">
+            <div class="passBox btn_hover" onclick="copyToClipboard(1)" id="passBox1"></div>
+            <div class="passBox btn_hover" onClick="copyToClipboard(2)" id="passBox2"></div>
+            <div class="passBox btn_hover" onClick="copyToClipboard(3)" id="passBox3"></div>
+            <div class="passBox btn_hover" onClick="copyToClipboard(4)" id="passBox4"></div>
+        </div>
+
+    </div>
+</body>
+
+<script src="./script/index.js"></script>
+
+</html>
